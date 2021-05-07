@@ -1,0 +1,39 @@
+.wrapper {
+	margin: 0 auto;
+	width: 1500px;
+	height: 100vh;
+	background-color: cadetblue;
+}
+.title {
+	background-color: #111111;
+	height: 70vh;
+}
+.title__header-page {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding: 60px 180px 0px 180px;
+}
+.header-page__title {
+	color: #ffffff;
+}
+.header-page__menu {
+}
+.page-menu__list {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr) minmax(43px, 103px);
+	grid-column-gap: 26px;
+}
+.list__menu-item a {
+	color: #ffffff;
+}
+
+.title__greeting {
+}
+.greeting__title {
+}
+.title__heading {
+}
+.title__cont {
+}
+.title-scroll {
+}
