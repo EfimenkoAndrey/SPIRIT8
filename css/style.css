@@ -37,7 +37,7 @@
 }
 .page-menu__list {
 	display: grid;
-	grid-template-columns: repeat(5, 1fr) minmax(43px, 103px);
+	grid-template-columns: repeat(5, 1fr) minmax(43px, 104px);
 	grid-column-gap: 26px;
 	grid-template-rows: 24px;
 }

@@ -2,7 +2,43 @@
 	.page-menu__list {
 		display: none;
 	}
-}
-.menu__burger {
-	display: block;
+	.page-menu__list {
+		position: absolute;
+		right: 180px;
+	}
+	.menu__burger {
+		display: block;
+	}
+	.title__header-page {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.header-page__menu:hover .menu__burger {
+		display: none;
+	}
+	.header-page__menu:hover .page-menu__list {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: flex-start;
+		position: absolute;
+		border: 2px solid #fcac45;
+		border-radius: 5px;
+	}
+	.page-menu__list {
+		background-color: #fcac45;
+	}
+	.header-page__menu:hover .menu-item__row {
+		display: none;
+	}
+	.list__menu-item {
+		width: 100%;
+	}
+	.list__menu-item a:hover {
+		color: #ffffff;
+	}
+	.list__menu-item:hover {
+		background-color: #292929;
+	}
 }
