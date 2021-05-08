@@ -36,8 +36,6 @@
 	font-size: 24px;
 	color: #ffffff;
 }
-.header-page__menu {
-}
 .page-menu__list {
 	display: grid;
 	grid-template-columns: repeat(5, 1fr) minmax(43px, 103px);
