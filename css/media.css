@@ -2,10 +2,6 @@
 	.page-menu__list {
 		display: none;
 	}
-	.page-menu__list {
-		position: absolute;
-		right: 180px;
-	}
 	.menu__burger {
 		display: block;
 	}
@@ -23,6 +19,7 @@
 		justify-content: space-around;
 		align-items: flex-start;
 		position: absolute;
+		right: 180px;
 		border: 2px solid #fcac45;
 		border-radius: 5px;
 	}
