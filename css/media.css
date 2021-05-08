@@ -1,0 +1,8 @@
+@media (max-width: 1270px) {
+	.page-menu__list {
+		display: none;
+	}
+}
+.menu__burger {
+	display: block;
+}
