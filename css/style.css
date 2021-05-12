@@ -30,27 +30,23 @@
 	background-color: #111111;
 	padding-bottom: 90px;
 }
-.title__header-page {
+.header-page {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	padding: 60px 180px 0px 180px;
 	width: 100%;
 }
-.header-page__title {
+.header-page__logo {
 	font-family: Lato-Regular;
 	font-size: 24px;
 	color: #ffffff;
 }
 .page-menu__list {
 	display: grid;
-	grid-template-columns: repeat(5, 1fr) minmax(43px, 104px);
+	grid-template-columns: repeat(6, auto);
+	grid-template-rows: 1fr 1fr;
 	grid-column-gap: 26px;
-	grid-template-rows: 24px;
-}
-.menu-item__row {
-	position: relative;
-	top: 10px;
-	width: auto;
+	grid-row-gap: 20px;
 }
 .menu-item__blackline {
 	width: 31px;
@@ -62,12 +58,12 @@
 }
 .list__menu-item a {
 	font-family: Lato-Regular;
-	line-height: 24px;
 	color: #ffffff;
 }
 .list__menu-item {
 	justify-content: center;
 	align-items: center;
+	min-height: 24px;
 }
 .list__menu-item a:hover {
 	color: #fcac45;
@@ -89,7 +85,6 @@
 	font-size: 44px;
 	font-weight: 100;
 	letter-spacing: 1.5px;
-	line-height: 24px;
 	color: #878787;
 }
 .title__heading strong {
@@ -114,14 +109,20 @@
 }
 .about {
 	display: grid;
-	grid-template-columns: 1fr auto;
+	grid-template-columns: 1fr 0.64fr;
 	margin: 0 auto;
-	padding: 103px 145px 101px 180px;
+	padding: 103px 180px 101px 180px;
+	width: 100%;
+}
+.about__img {
 	max-width: 100%;
+}
+.about-content {
+	max-width: 454px;
 }
 .content__title {
 	justify-content: space-between;
-	height: 58px;
+	min-height: 58px;
 	margin-bottom: 20px;
 }
 .title__about {
@@ -140,6 +141,16 @@
 	height: 4px;
 	background-color: #fcac45;
 	margin-bottom: 32px;
+}
+.content__list li::before {
+	content: "";
+	display: inline-block;
+	background: url("../img/ABOUT/list_marker.png") no-repeat;
+	position: relative;
+	top: 1px;
+	margin-right: 10px;
+	width: 14px;
+	height: 15px;
 }
 .content__box {
 	justify-content: space-between;
@@ -167,6 +178,24 @@
 	height: 47px;
 	border: 1px solid #7f7f7f;
 	border-radius: 3px;
+}
+.content__box-button a::before {
+	content: "";
+	display: inline-block;
+	background: url("../img/ABOUT/button_about.png") no-repeat;
+	width: 14px;
+	height: 12px;
+	position: relative;
+	top: 1px;
+	margin-right: 10px;
+}
+.content__box-button:hover {
+	cursor: pointer;
+	border: #fcac45;
+	background-color: #fcac45;
+}
+.content__box-button:hover .content__button {
+	text-decoration: underline;
 }
 .content__button {
 	font-family: OpenSans-SemiBold;
