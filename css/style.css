@@ -26,7 +26,7 @@
 	margin: 0 auto;
 	max-width: 1500px;
 }
-.title {
+.title-wrap {
 	background-color: #111111;
 	padding-bottom: 90px;
 }
@@ -36,66 +36,66 @@
 	padding: 60px 180px 0px 180px;
 	width: 100%;
 }
-.header-page__logo {
+.title {
 	font-family: Lato-Regular;
 	font-size: 24px;
 	color: #ffffff;
 }
-.page-menu__list {
+.menu-list {
 	display: grid;
 	grid-template-columns: repeat(6, auto);
 	grid-template-rows: 1fr 1fr;
 	grid-column-gap: 26px;
 	grid-row-gap: 20px;
 }
-.menu-item__blackline {
+.line-b {
 	width: 30px;
 	height: 3px;
 	background-color: #292929;
 }
-.menu-item__blackline_yellow {
+.line-b_yellow {
 	background-color: #fcac45;
 }
-.list__menu-item a {
+.menu-item a {
 	font-family: Lato-Regular;
 	color: #ffffff;
 }
-.list__menu-item {
+.menu-item {
 	justify-content: center;
 	align-items: center;
 	min-height: 24px;
 }
-.list__menu-item a:hover {
+.menu-item a:hover {
 	color: #fcac45;
 }
-.menu__burger {
+.menu-burger {
 	display: none;
 }
-.title__greeting {
+.greeting {
 	text-align: center;
 }
-.greeting__title {
+.greeting__logo {
 	justify-content: space-between;
 	margin-top: 225px;
 	margin-bottom: 285px;
 	min-height: 72px;
 }
-.title__heading {
+.greeting__cont {
 	font-family: MyriadPro-Regular;
 	font-size: 44px;
 	font-weight: 100;
 	letter-spacing: 1.5px;
 	color: #878787;
 }
-.title__heading strong {
+.greeting__cont strong {
 	color: #fcac45;
 }
-.title__cont {
+.greeting__cont-page {
 	font-family: MyriadPro-Regular;
 	font-weight: 100;
 	color: #878787;
 }
-.title-scroll {
+.greeting__scroll {
 	justify-content: center;
 	align-items: center;
 	margin: 0 auto;
@@ -104,7 +104,7 @@
 	border: 3px #878787 solid;
 	border-radius: 50%;
 }
-.title-scroll:hover {
+.greeting-scroll:hover {
 	border: 3px solid #fcac45;
 }
 .about {
@@ -117,32 +117,32 @@
 .about__img {
 	max-width: 100%;
 }
-.about-content {
+.about__content {
 	max-width: 454px;
 }
-.content__title {
+.about__title {
 	justify-content: space-between;
 	min-height: 58px;
 	margin-bottom: 20px;
 }
-.title__about {
+.about__logo {
 	font-family: OpenSans-Regular;
 	font-size: 20px;
 	text-transform: uppercase;
 	color: #636363;
 }
-.title__subtitle-about {
+.about__slogan {
 	font-family: OpenSans-Regular;
 	font-size: 34px;
 	text-transform: uppercase;
 }
-.content__line {
+.content-line {
 	width: 99px;
 	height: 4px;
 	background-color: #fcac45;
 	margin-bottom: 32px;
 }
-.content__list li::before {
+.about__list li::before {
 	content: "";
 	display: inline-block;
 	background: url("../img/ABOUT/list_marker.png") no-repeat;
@@ -152,26 +152,26 @@
 	width: 14px;
 	height: 15px;
 }
-.content__box {
+.about__cont-txt {
 	justify-content: space-between;
 	min-height: 295px;
 }
-.content__txt {
+.about__txt {
 	font-family: MyriadPro-Regular;
 	font-size: 18px;
 	line-height: 24px;
 	color: #6c6c6c;
 }
-.list__item {
+.list-item {
 	font-family: OpenSans-SemiBold;
 	line-height: 25px;
 }
-.list__item span {
+.list-item span {
 	font-family: OpenSans-Regular;
 	font-style: italic;
 	color: #6c6c6c;
 }
-.content__box-button {
+.about__box-button {
 	justify-content: center;
 	align-items: center;
 	width: 195px;
@@ -179,7 +179,7 @@
 	border: 1px solid #7f7f7f;
 	border-radius: 3px;
 }
-.content__box-button a::before {
+.about__box-button a::before {
 	content: "";
 	display: inline-block;
 	background: url("../img/ABOUT/button_about.png") no-repeat;
@@ -189,15 +189,15 @@
 	top: 1px;
 	margin-right: 10px;
 }
-.content__box-button:hover {
+.about__box-button:hover {
 	cursor: pointer;
 	border: #fcac45;
 	background-color: #fcac45;
 }
-.content__box-button:hover .content__button {
+.about__box-button:hover .about__button {
 	text-decoration: underline;
 }
-.content__button {
+.about__button {
 	font-family: OpenSans-SemiBold;
 	text-transform: uppercase;
 	font-size: 12px;

@@ -1,8 +1,8 @@
 @media (max-width: 1270px) {
-	.page-menu__list {
+	.menu-list {
 		display: none;
 	}
-	.menu__burger {
+	.menu-burger {
 		display: block;
 	}
 	.header-page {
@@ -10,29 +10,29 @@
 		flex-direction: row;
 		justify-content: space-between;
 	}
-	.header-page__menu:hover .menu__burger {
+	.menu:hover .menu-burger {
 		display: none;
 	}
-	.header-page__menu:hover .page-menu__list {
+	.menu:hover .menu-list {
 		display: block;
 		position: absolute;
 		right: 180px;
 		border: 2px solid #fcac45;
 		border-radius: 5px;
 	}
-	.page-menu__list {
+	.menu-list {
 		background-color: #fcac45;
 	}
-	.header-page__menu:hover .menu-item__row {
+	.menu:hover .line {
 		display: none;
 	}
-	.list__menu-item {
+	.menu-item {
 		width: auto;
 	}
-	.list__menu-item a:hover {
+	.menu-item a:hover {
 		color: #ffffff;
 	}
-	.list__menu-item:hover {
+	.menu-item:hover {
 		background-color: #292929;
 	}
 }
