@@ -14,10 +14,7 @@
 		display: none;
 	}
 	.header-page__menu:hover .page-menu__list {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
-		align-items: flex-start;
+		display: block;
 		position: absolute;
 		right: 180px;
 		border: 2px solid #fcac45;
@@ -30,7 +27,7 @@
 		display: none;
 	}
 	.list__menu-item {
-		width: 100%;
+		width: auto;
 	}
 	.list__menu-item a:hover {
 		color: #ffffff;
