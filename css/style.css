@@ -99,12 +99,13 @@
 	justify-content: center;
 	align-items: center;
 	margin: 0 auto;
+	padding-top: 2px;
 	width: 50px;
 	height: 50px;
 	border: 3px #878787 solid;
 	border-radius: 50%;
 }
-.greeting-scroll:hover {
+.greeting__scroll:hover {
 	border: 3px solid #fcac45;
 }
 .about {
@@ -202,4 +203,45 @@
 	text-transform: uppercase;
 	font-size: 12px;
 	color: #616161;
+}
+.aside {
+	background-color: #070707;
+}
+.aside__caption {
+	justify-content: center;
+	align-items: center;
+}
+.greeting__cont {
+}
+.greeting__cont_color {
+}
+.greeting__cont_boldwhite {
+}
+.content-line_width-smoll {
+	margin: 0 auto;
+}
+.content-line_color {
+	margin: 0 auto;
+}
+.aside__box {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+.aside__box-cont {
+	justify-content: center;
+	align-items: center;
+}
+.flex-col {
+}
+.aside__name {
+}
+.aside__name_color-fontweigth {
+}
+.aside__box-txt {
+}
+.aside-team__name_color-fontweigth {
+}
+.slaider {
+}
+.slainder-item {
 }
