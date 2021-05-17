@@ -34,9 +34,6 @@
 	.menu-list {
 		background-color: #fcac45;
 	}
-	.menu:hover .line {
-		display: none;
-	}
 	.menu-item {
 		width: auto;
 	}
