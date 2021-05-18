@@ -67,7 +67,14 @@
 .menu-item {
 	justify-content: center;
 	align-items: center;
+	position: relative;
 	min-height: 24px;
+}
+.menu-item_after::after {
+	content: url("../img/title/Shape\ 1\ copy.png");
+	display: block;
+	position: absolute;
+	top: 30px;
 }
 .menu-item a:hover {
 	color: #fcac45;
@@ -137,28 +144,28 @@
 	color: #636363;
 }
 .about__slogan {
+	position: relative;
 	font-family: OpenSans-Regular;
 	font-size: 34px;
 	text-transform: uppercase;
 }
-.content-line {
-	width: 99px;
-	height: 4px;
-	background-color: #fcac45;
-	margin-bottom: 32px;
+.about__slogan::after {
+	content: url("../img/line_cont_about.png");
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	top: 22px;
 }
 .about__list li::before {
-	content: "";
+	content: url("../img/ABOUT/list_marker.png");
 	display: inline-block;
-	background: url("../img/ABOUT/list_marker.png") no-repeat;
 	position: relative;
 	top: 1px;
 	margin-right: 10px;
-	width: 14px;
-	height: 15px;
 }
 .about__cont-txt {
 	justify-content: space-between;
+	margin-top: 30px;
 	min-height: 295px;
 }
 .about__txt {
@@ -210,8 +217,16 @@
 	min-height: 726px;
 }
 .aside__caption {
+	margin-bottom: 141px;
+	position: relative;
 	justify-content: center;
 	align-items: center;
+}
+.aside__caption::after {
+	content: url("../img/Shape2copy.png");
+	display: inline-block;
+	position: absolute;
+	top: 70px;
 }
 .greeting__cont_color {
 	color: #ffffff;
@@ -219,17 +234,6 @@
 .greeting__cont_boldwhite {
 	font-weight: 700;
 	color: #ffffff;
-}
-.content-line_margin-tb {
-	margin: 0 auto;
-	margin-top: 30px;
-	margin-bottom: 10px;
-}
-.content-line_width-smoll {
-	margin: 0 auto;
-	margin-bottom: 90px;
-	color: #b37b33;
-	width: 67px;
 }
 .aside__box {
 	margin: 0 auto;
