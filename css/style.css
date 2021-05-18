@@ -176,7 +176,8 @@
 	font-style: italic;
 	color: #6c6c6c;
 }
-.about__box-button {
+.btn {
+	display: inline-flex;
 	justify-content: center;
 	align-items: center;
 	width: 195px;
@@ -184,22 +185,16 @@
 	border: 1px solid #7f7f7f;
 	border-radius: 3px;
 }
-.about__box-button a::before {
-	content: "";
-	display: inline-block;
-	background: url("../img/ABOUT/button_about.png") no-repeat;
-	width: 14px;
-	height: 12px;
-	position: relative;
-	top: 1px;
+.about__button::before {
+	content: url(../img/ABOUT/button_about.png);
 	margin-right: 10px;
 }
-.about__box-button:hover {
+.btn:hover {
 	cursor: pointer;
 	border: #fcac45;
 	background-color: #fcac45;
 }
-.about__box-button:hover .about__button {
+.about__button:hover {
 	text-decoration: underline;
 }
 .about__button {
