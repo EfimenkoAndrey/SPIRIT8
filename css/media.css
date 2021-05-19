@@ -84,8 +84,11 @@
 	.about__txt {
 		text-align: center;
 	}
-	.about__content .content-line {
-		display: none;
+	.about__slogan::after {
+		content: " ";
+	}
+	.about__button {
+		margin: 0 auto;
 	}
 	.about__list {
 		padding-left: 30px;
