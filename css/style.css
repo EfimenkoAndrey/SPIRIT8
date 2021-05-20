@@ -239,7 +239,7 @@
 .greeting__cont_boldwhite::after {
 	content: url(../img/line_cont_about.png);
 	position: absolute;
-	top: 33px;
+	top: 42px;
 	right: 114px;
 }
 .aside__box {
