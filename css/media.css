@@ -7,13 +7,13 @@
 	}
 }
 @media (max-width: 1170px) {
-	.aside__box div:nth-child(3) {
+	.aside__four-box div:nth-child(3) {
 		display: none;
 	}
-	.aside__box div:nth-child(4) {
+	.aside__four-box div:nth-child(4) {
 		display: none;
 	}
-	.aside__box {
+	.aside__four-box {
 		width: auto;
 	}
 }
@@ -78,7 +78,7 @@
 	.aside {
 		padding: 100px 10px 85px 10px;
 	}
-	.aside__box .aside__box-cont:nth-child(2) {
+	.aside__four-box .aside__box-cont:nth-child(2) {
 		display: none;
 	}
 }
@@ -126,7 +126,7 @@
 		text-align: center;
 	}
 	.about__slogan::after {
-		left: 105px;
+		left: 88px;
 	}
 	.about__button {
 		margin: 0 auto;
@@ -142,13 +142,12 @@
 	}
 	.aside__caption {
 		text-align: center;
-		margin-bottom: 141px;
 	}
-	.aside__caption::after {
+	.caption::after {
 		top: 120px;
 	}
-	.greeting__cont_boldwhite::after {
-		top: 85px;
+	.aside__subject_bold::after {
+		top: 95px;
 		right: 8px;
 	}
 }

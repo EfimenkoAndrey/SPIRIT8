@@ -18,6 +18,10 @@
 	font-family: OpenSans-Bold;
 	src: url("../fonts/Open_Sans/OpenSans-Bold.ttf");
 }
+@font-face {
+	font-family: OpenSans-Italic;
+	src: url(../fonts/Open_Sans/OpenSans-Italic.ttf);
+}
 .flex-col {
 	display: flex;
 	flex-direction: column;
@@ -85,17 +89,21 @@
 .greeting {
 	text-align: center;
 }
+
 .greeting__logo {
 	justify-content: space-between;
 	margin-top: 225px;
 	margin-bottom: 285px;
 	min-height: 72px;
 }
-.greeting__cont {
+.subject {
 	font-family: MyriadPro-Regular;
 	font-size: 44px;
+	text-transform: uppercase;
 	font-weight: 100;
 	letter-spacing: 1.5px;
+}
+.greeting__subject {
 	color: #878787;
 }
 .greeting__cont strong {
@@ -216,39 +224,47 @@
 	width: 100%;
 	min-height: 726px;
 }
-.aside__caption {
-	margin-bottom: 141px;
+.caption {
 	position: relative;
 	justify-content: center;
 	align-items: center;
 }
-.aside__caption::after {
+.aside__caption {
+	margin-bottom: 141px;
+}
+.caption::after {
 	content: url("../img/Shape2copy.png");
 	display: inline-block;
 	position: absolute;
 	top: 70px;
 }
-.greeting__cont_color {
+.aside__subject {
 	color: #ffffff;
 }
-.greeting__cont_boldwhite {
+.subject {
 	position: relative;
-	font-weight: 700;
+}
+.aside__subject {
 	color: #ffffff;
 }
-.greeting__cont_boldwhite::after {
+.aside__subject_bold {
+	font-weight: 700;
+}
+.aside__subject_bold::after {
 	content: url(../img/line_cont_about.png);
 	position: absolute;
-	top: 42px;
+	top: 40px;
 	right: 114px;
 }
-.aside__box {
-	margin: 0 auto;
-	margin-bottom: 75px;
+.four-box {
 	justify-content: space-between;
+	margin: 0 auto;
 	width: 100%;
 }
-.aside__box-cont {
+.aside__four-box {
+	margin-bottom: 75px;
+}
+.box-cont {
 	justify-content: space-between;
 	align-items: center;
 	text-align: center;
@@ -266,7 +282,7 @@
 	line-height: 32px;
 	font-weight: 400;
 }
-.aside__box-txt {
+.box-txt {
 	font-family: OpenSans-Regular;
 	line-height: 20px;
 	color: #ffffff;
@@ -284,4 +300,43 @@
 .slainder-item:hover {
 	cursor: pointer;
 	background-color: #fcac45;
+}
+.services {
+	margin: 0 auto;
+	padding: 100px 180px 0px 180px;
+	align-items: center;
+}
+.services__caption {
+	text-align: center;
+	flex-wrap: wrap;
+}
+.services__subject {
+	color: #222222;
+}
+.services__subject_bold::after {
+	content: url(../img/line_cont_about.png);
+	display: block;
+	position: absolute;
+	top: 40px;
+	right: 256px;
+}
+.services__subject_bold {
+	font-weight: 700;
+}
+.services__box-cont {
+	max-height: 250px;
+}
+.services-name {
+	font-family: OpenSans-SemiBold;
+	font-size: 25px;
+	text-transform: uppercase;
+}
+.text {
+	text-align: center;
+	font-family: OpenSans-Italic;
+	font-size: 16px;
+	line-height: 24px;
+}
+.services__box-txt {
+	color: #222222;
 }
