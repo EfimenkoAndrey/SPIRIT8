@@ -5,16 +5,14 @@
 	.aside__box-cont {
 		max-width: 200px;
 	}
-}
-@media (max-width: 1170px) {
-	.aside__four-box div:nth-child(3) {
-		display: none;
-	}
-	.aside__four-box div:nth-child(4) {
-		display: none;
-	}
-	.aside__four-box {
+	.services__four-box {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 15px;
 		width: auto;
+	}
+	.services__box-cont {
+		margin: 0 auto;
 	}
 }
 @media (max-width: 1350px) {
@@ -58,6 +56,29 @@
 		background-color: #292929;
 	}
 }
+@media (max-width: 1170px) {
+	.aside__four-box div:nth-child(3) {
+		display: none;
+	}
+	.aside__four-box div:nth-child(4) {
+		display: none;
+	}
+	.aside__four-box {
+		width: auto;
+	}
+}
+@media (max-width: 990px) {
+	.services {
+		padding: 100px 160px 100px 160px;
+	}
+	.services__subject_bold::after {
+		right: 71px;
+		top: 80px;
+	}
+	.services .caption::after {
+		top: 110px;
+	}
+}
 @media (max-width: 960px) {
 	.about {
 		display: flex;
@@ -73,6 +94,14 @@
 	.aside {
 		padding: 100px 90px 85px 90px;
 	}
+	.services {
+		padding: 100px 130px 100px 130px;
+	}
+}
+@media (max-width: 690px) {
+	.services {
+		padding: 100px 70px 100px 70px;
+	}
 }
 @media (max-width: 576px) {
 	.aside {
@@ -80,6 +109,23 @@
 	}
 	.aside__four-box .aside__box-cont:nth-child(2) {
 		display: none;
+	}
+	.services {
+		padding: 100px 50px 100px 50px;
+	}
+}
+@media (max-width: 530px) {
+	.services__subject_bold::after {
+		right: 92px;
+		top: 35px;
+	}
+	.services .caption::after {
+		top: 110px;
+	}
+}
+@media (max-width: 498px) {
+	.services {
+		padding: 100px 40px 100px 40px;
 	}
 }
 @media (max-width: 490px) {
@@ -89,15 +135,37 @@
 	.about__content {
 		max-width: 454px;
 	}
+	.services {
+		padding: 100px 30px 100px 30px;
+	}
+}
+@media (max-width: 460px) {
+	.services {
+		padding: 100px 20px 100px 20px;
+	}
 }
 @media (max-width: 440px) {
 	.about__cont-txt {
 		min-height: 350px;
 	}
+	.services {
+		padding: 100px 10px 100px 10px;
+	}
 }
 @media (max-width: 431px) {
 	.about__slogan::after {
 		top: 60px;
+	}
+}
+@media (max-width: 420px) {
+	.services__four-box {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 15px;
+		width: auto;
+	}
+	.services__four-box {
+		margin-top: 60px;
 	}
 }
 @media (max-width: 400px) {
@@ -115,6 +183,9 @@
 	}
 	.about__box-button {
 		margin: 0 auto;
+	}
+	.aside__caption {
+		text-align: center;
 	}
 }
 @media (max-width: 345px) {
@@ -139,9 +210,6 @@
 	}
 	.aside {
 		padding: 80px 10px 85px 10px;
-	}
-	.aside__caption {
-		text-align: center;
 	}
 	.caption::after {
 		top: 120px;

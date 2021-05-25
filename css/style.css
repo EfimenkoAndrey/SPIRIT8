@@ -303,7 +303,7 @@
 }
 .services {
 	margin: 0 auto;
-	padding: 100px 180px 0px 180px;
+	padding: 100px 180px 100px 180px;
 	align-items: center;
 }
 .services__caption {
@@ -337,6 +337,17 @@
 	font-size: 16px;
 	line-height: 24px;
 }
+.services__text {
+	margin-top: 90px;
+}
+.services__four-box {
+	flex-wrap: wrap;
+	margin-top: 105px;
+}
 .services__box-txt {
 	color: #222222;
+}
+.clients {
+}
+.clients__caption::after {
 }
