@@ -159,7 +159,7 @@
 }
 .about__slogan::after {
 	content: url("../img/line_cont_about.png");
-	display: inline-block;
+	display: block;
 	position: absolute;
 	left: 0;
 	top: 22px;
@@ -292,12 +292,12 @@
 	justify-content: space-between;
 	width: 55px;
 }
-.slainder-item {
+.slaider-item {
 	width: 10px;
 	height: 10px;
 	background-color: #ffffff;
 }
-.slainder-item:hover {
+.slaider-item:hover {
 	cursor: pointer;
 	background-color: #fcac45;
 }
@@ -348,6 +348,25 @@
 	color: #222222;
 }
 .clients {
+	padding: 100px 278px 100px 278px;
+	background-color: #0b0b0b;
+	width: 100%;
 }
-.clients__caption::after {
+.clients__subject {
+	color: #ffffff;
+}
+.clients__subject_bold {
+	font-weight: 700;
+}
+.clients__subject_bold::after {
+	content: url(../img/line_cont_about.png);
+	display: block;
+	position: absolute;
+	right: 175px;
+	top: 40px;
+}
+.clients-box {
+	margin-top: 147px;
+	margin-bottom: 100px;
+	justify-content: space-between;
 }
