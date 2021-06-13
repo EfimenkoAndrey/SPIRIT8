@@ -46,7 +46,7 @@
 }
 .title {
 	font-family: Lato-Regular;
-	font-size: 24px;
+	font-size: 1.71rem;
 	color: #ffffff;
 }
 .menu-list {
@@ -98,7 +98,7 @@
 }
 .subject {
 	font-family: MyriadPro-Regular;
-	font-size: 44px;
+	font-size: 3.14rem;
 	text-transform: uppercase;
 	font-weight: 100;
 	letter-spacing: 1.5px;
@@ -147,14 +147,14 @@
 }
 .about__logo {
 	font-family: OpenSans-Regular;
-	font-size: 20px;
+	font-size: 1.43rem;
 	text-transform: uppercase;
 	color: #636363;
 }
 .about__slogan {
 	position: relative;
 	font-family: OpenSans-Regular;
-	font-size: 34px;
+	font-size: 2.43rem;
 	text-transform: uppercase;
 }
 .about__slogan::after {
@@ -178,13 +178,13 @@
 }
 .about__txt {
 	font-family: MyriadPro-Regular;
-	font-size: 18px;
-	line-height: 24px;
+	font-size: 1.285rem;
+	line-height: 1.33;
 	color: #6c6c6c;
 }
 .list-item {
 	font-family: OpenSans-SemiBold;
-	line-height: 25px;
+	line-height: 1.38;
 }
 .list-item span {
 	font-family: OpenSans-Regular;
@@ -192,11 +192,9 @@
 	color: #6c6c6c;
 }
 .btn {
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	width: 195px;
-	height: 47px;
+	padding: 1.3em;
+	text-align: center;
+	max-width: 195px;
 	border: 1px solid #7f7f7f;
 	border-radius: 3px;
 }
@@ -206,7 +204,7 @@
 }
 .btn:hover {
 	cursor: pointer;
-	border: #fcac45;
+	border: 1px solid #fcac45;
 	background-color: #fcac45;
 }
 .about__button:hover {
@@ -215,7 +213,7 @@
 .about__button {
 	font-family: OpenSans-SemiBold;
 	text-transform: uppercase;
-	font-size: 12px;
+	font-size: 0.857rem;
 	color: #616161;
 }
 .aside {
@@ -273,18 +271,18 @@
 }
 .aside__name {
 	font-family: OpenSans-Regular;
-	font-size: 21px;
+	font-size: 1.5rem;
 	font-weight: 700;
 	color: #ffffff;
 }
 .aside__name_fontweigth {
-	font-size: 18px;
-	line-height: 32px;
+	font-size: 1.285rem;
+	line-height: 1.77;
 	font-weight: 400;
 }
 .box-txt {
 	font-family: OpenSans-Regular;
-	line-height: 20px;
+	line-height: 1.43;
 	color: #ffffff;
 }
 .slaider {
@@ -328,21 +326,21 @@
 }
 .services-name {
 	font-family: OpenSans-SemiBold;
-	font-size: 25px;
+	font-size: 1.78rem;
 	text-transform: uppercase;
 }
 .text {
 	text-align: center;
 	font-family: OpenSans-Italic;
-	font-size: 16px;
-	line-height: 24px;
+	font-size: 1.14rem;
+	line-height: 1.5;
 }
 .services__text {
 	margin-top: 90px;
+	margin-bottom: 105px;
 }
 .services__four-box {
 	flex-wrap: wrap;
-	margin-top: 105px;
 }
 .services__box-txt {
 	color: #222222;
@@ -369,4 +367,47 @@
 	margin-top: 147px;
 	margin-bottom: 100px;
 	justify-content: space-between;
+}
+.filter-cont_uppercase {
+	text-transform: uppercase;
+}
+.filter-cont {
+	font-family: OpenSans-SemiBold;
+	font-size: 1.28rem;
+}
+.our-work {
+	padding: 100px 180px 100px 180px;
+}
+.our-work__subject_bold {
+	position: relative;
+	font-weight: 700;
+}
+.our-work__subject_bold::after {
+	content: url(../img/line_cont_about.png);
+	display: block;
+	position: absolute;
+	right: 222px;
+	top: 40px;
+}
+.our-work__filter {
+	justify-content: space-between;
+	align-items: center;
+}
+.our-work__button {
+	justify-content: space-between;
+}
+.button {
+	margin-right: 0.83em;
+	padding-right: 0.83em;
+	background-color: #ffffff;
+	border-right: 1px solid #919191;
+	color: #757575;
+}
+.button:hover {
+	color: #222222;
+}
+.button_border-none {
+	margin: 0;
+	padding: 0;
+	border: initial;
 }
