@@ -34,6 +34,9 @@
 	margin: 0 auto;
 	max-width: 1500px;
 }
+
+/* title-block(Титульный блок)  */
+
 .title-wrap {
 	background-color: #111111;
 	padding-bottom: 90px;
@@ -74,18 +77,45 @@
 	position: relative;
 	min-height: 24px;
 }
-.menu-item_after::after {
-	content: url("../img/title/Shape\ 1\ copy.png");
+.menu-item::before {
+	content: "";
 	display: block;
 	position: absolute;
+	width: 100%;
+	height: 3px;
 	top: 30px;
+	background-color: #292929;
+	visibility: hidden;
+	transition: visibility 0.15s linear;
+}
+.menu-item::after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 50%;
+	height: 3px;
+	top: 30px;
+	right: 0;
+	background-color: #fcac45;
+	visibility: hidden;
+	transition: visibility 0.15s linear;
 }
 .menu-item a:hover {
 	color: #fcac45;
+	transition: color 0.1s linear;
+}
+.menu-item:hover::before {
+	visibility: visible;
+}
+.menu-item:hover::after {
+	visibility: visible;
 }
 .menu-burger {
 	display: none;
 }
+
+/* greeting (ПРИВЕТСТВИЕ) */
+
 .greeting {
 	text-align: center;
 }
@@ -114,19 +144,22 @@
 	font-weight: 100;
 	color: #878787;
 }
-.greeting__scroll {
-	justify-content: center;
-	align-items: center;
+.scroll {
+	display: inline-block;
 	margin: 0 auto;
-	padding-top: 2px;
+	padding: 16px 0;
 	width: 50px;
 	height: 50px;
 	border: 3px #878787 solid;
 	border-radius: 50%;
 }
-.greeting__scroll:hover {
+.scroll:hover {
 	border: 3px solid #fcac45;
+	transition: border-color 0.15s linear;
 }
+
+/* ABOUT(О нас) */
+
 .about {
 	display: grid;
 	grid-template-columns: 1fr 0.64fr;
@@ -206,6 +239,7 @@
 	cursor: pointer;
 	border: 1px solid #fcac45;
 	background-color: #fcac45;
+	transition: background-color 0.1s linear;
 }
 .about__button:hover {
 	text-decoration: underline;
@@ -216,6 +250,9 @@
 	font-size: 0.857rem;
 	color: #616161;
 }
+
+/* aside (block TEAM) */
+
 .aside {
 	padding: 100px 180px 85px 180px;
 	background-color: #070707;
@@ -298,7 +335,11 @@
 .slaider-item:hover {
 	cursor: pointer;
 	background-color: #fcac45;
+	transition: background-color 0.1s linear;
 }
+
+/* Services (Услуги) */
+
 .services {
 	margin: 0 auto;
 	padding: 100px 180px 100px 180px;
@@ -345,6 +386,9 @@
 .services__box-txt {
 	color: #222222;
 }
+
+/* Clients (Клиенты) */
+
 .clients {
 	padding: 100px 278px 100px 278px;
 	background-color: #0b0b0b;
@@ -368,6 +412,9 @@
 	margin-bottom: 100px;
 	justify-content: space-between;
 }
+
+/* OUR-WORK (Наши работы) */
+
 .filter-cont_uppercase {
 	text-transform: uppercase;
 }
@@ -405,6 +452,7 @@
 }
 .button:hover {
 	color: #222222;
+	transition: color 0.15s linear;
 }
 .button_border-none {
 	margin: 0;

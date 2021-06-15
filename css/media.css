@@ -58,6 +58,12 @@
 		border: 2px solid #fcac45;
 		border-radius: 5px;
 	}
+	.menu-item::after {
+		display: none;
+	}
+	.menu-item::before {
+		display: none;
+	}
 	.menu-list {
 		background-color: #fcac45;
 	}
@@ -69,6 +75,7 @@
 	}
 	.menu-item:hover {
 		background-color: #292929;
+		transition: background-color 0.15s linear;
 	}
 }
 @media (max-width: 1170px) {
