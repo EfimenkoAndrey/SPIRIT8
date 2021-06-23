@@ -459,3 +459,49 @@
 	padding: 0;
 	border: initial;
 }
+.twelve-box {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 30px;
+	margin-top: 50px;
+}
+.box-img {
+	position: relative;
+	height: 240px;
+	background-color: #222222;
+}
+.box-suptitle {
+	display: block;
+	font-family: OpenSans-SemiBold;
+	text-transform: uppercase;
+	font-size: 0.857rem;
+	line-height: 1.7;
+	color: #ffffff;
+}
+.box-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 4.7em;
+	padding-bottom: 4.3em;
+}
+.box-text {
+	font-size: 0.857rem;
+	font-family: OpenSans-SemiBold;
+	color: #8e8e8e;
+}
+.box-link {
+	margin-top: 20px;
+}
+.box-item {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+}
+.box-link img:hover {
+	display: none;
+}
