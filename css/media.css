@@ -104,12 +104,6 @@
 	.services {
 		padding: 100px 160px 100px 160px;
 	}
-	.services__subject_bold::after {
-		top: 45px;
-	}
-	.services .caption::after {
-		top: 75px;
-	}
 	.clients {
 		padding: 100px 230px 100px 230px;
 	}
@@ -126,15 +120,6 @@
 	}
 	.clients {
 		padding: 100px 150px 100px 150px;
-	}
-}
-@media (max-width: 944px) {
-	.services__subject_bold::after {
-		right: 72px;
-		top: 80px;
-	}
-	.services .caption::after {
-		top: 110px;
 	}
 }
 @media (max-width: 770px) {
@@ -171,22 +156,8 @@
 	}
 }
 @media (max-width: 530px) {
-	.services__subject_bold::after {
-		right: 92px;
-		top: 35px;
-	}
-	.services .caption::after {
-		top: 110px;
-	}
 	.clients__caption {
 		text-align: center;
-	}
-	.clients__subject_bold::after {
-		top: 75px;
-		right: 33px;
-	}
-	.clients .caption::after {
-		top: 105px;
 	}
 }
 @media (max-width: 498px) {
@@ -208,11 +179,6 @@
 @media (max-width: 460px) {
 	.services {
 		padding: 100px 20px 100px 20px;
-	}
-}
-@media (max-width: 447px) {
-	.about__slogan::after {
-		top: 60px;
 	}
 }
 @media (max-width: 440px) {
@@ -263,13 +229,6 @@
 	.aside {
 		padding: 80px 10px 85px 10px;
 	}
-	.aside__subject_bold::after {
-		top: 75px;
-		right: 8px;
-	}
-	.aside__caption::after {
-		top: 107px;
-	}
 }
 @media (max-width: 345px) {
 	.greeting__logo {
@@ -279,9 +238,6 @@
 	.about__txt {
 		text-align: center;
 	}
-	.about__slogan::after {
-		right: 0;
-	}
 	.about__button {
 		margin: 0 auto;
 	}
@@ -290,12 +246,5 @@
 	}
 	.about__txt_media-alignleft {
 		text-align: left;
-	}
-	.services .caption::after {
-		top: 150px;
-	}
-	.services__subject_bold::after {
-		right: 45px;
-		top: 75px;
 	}
 }

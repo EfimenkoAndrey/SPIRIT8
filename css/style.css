@@ -191,11 +191,12 @@
 	text-transform: uppercase;
 }
 .about__slogan::after {
-	content: url("../img/line_cont_about.png");
+	content: " ";
 	display: block;
-	position: absolute;
-	left: 0;
-	top: 22px;
+	margin-top: 20px;
+	width: 97px;
+	height: 3px;
+	background-color: #fcac45;
 }
 .about__list li::before {
 	content: url("../img/ABOUT/list_marker.png");
@@ -260,7 +261,6 @@
 	min-height: 726px;
 }
 .caption {
-	position: relative;
 	justify-content: center;
 	align-items: center;
 }
@@ -268,16 +268,19 @@
 	margin-bottom: 141px;
 }
 .caption::after {
-	content: url("../img/Shape2copy.png");
-	display: inline-block;
-	position: absolute;
-	top: 70px;
+	content: " ";
+	display: block;
+	width: 65px;
+	height: 3px;
+	background-color: #fdc57c;
+}
+.caption_after-bgc::after {
+	background-color: #b47c34;
 }
 .aside__subject {
 	color: #ffffff;
 }
 .subject {
-	position: relative;
 }
 .aside__subject {
 	color: #ffffff;
@@ -285,11 +288,13 @@
 .aside__subject_bold {
 	font-weight: 700;
 }
-.aside__subject_bold::after {
-	content: url(../img/line_cont_about.png);
-	position: absolute;
-	top: 40px;
-	right: 114px;
+.section__subject::after {
+	content: " ";
+	display: block;
+	margin: 30px auto 15px auto;
+	width: 100px;
+	height: 3px;
+	background-color: #fcac45;
 }
 .four-box {
 	justify-content: space-between;
@@ -346,18 +351,12 @@
 	align-items: center;
 }
 .services__caption {
+	margin: 0 auto;
 	text-align: center;
 	flex-wrap: wrap;
 }
 .services__subject {
 	color: #222222;
-}
-.services__subject_bold::after {
-	content: url(../img/line_cont_about.png);
-	display: block;
-	position: absolute;
-	top: 40px;
-	right: 256px;
 }
 .services__subject_bold {
 	font-weight: 700;
@@ -401,11 +400,12 @@
 	font-weight: 700;
 }
 .clients__subject_bold::after {
-	content: url(../img/line_cont_about.png);
+	content: " ";
 	display: block;
-	position: absolute;
-	right: 175px;
-	top: 40px;
+	margin: 30px auto 15px auto;
+	width: 100px;
+	height: 3px;
+	background-color: #fcac45;
 }
 .clients-box {
 	margin-top: 147px;
@@ -426,15 +426,7 @@
 	padding: 100px 180px 100px 180px;
 }
 .our-work__subject_bold {
-	position: relative;
 	font-weight: 700;
-}
-.our-work__subject_bold::after {
-	content: url(../img/line_cont_about.png);
-	display: block;
-	position: absolute;
-	right: 222px;
-	top: 40px;
 }
 .our-work__filter {
 	justify-content: space-between;
@@ -461,7 +453,7 @@
 }
 .twelve-box {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(4, 263px);
 	grid-gap: 30px;
 	margin-top: 50px;
 }
